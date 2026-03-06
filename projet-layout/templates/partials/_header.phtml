@@ -1,0 +1,15 @@
+<header>
+    <div class="header">
+        <div class="titre-logo-header">
+            <img class="logo-header"src="assets/images/<?= $data["logo"]?>" alt="logo de chauve souris">
+            <h1><?= $data["name"] ?></h1>
+        </div>
+        <nav class="nav-header">
+            <!-- votre navigation -->
+            <?php foreach($data["links"] as $link) { ?>
+            <li><?= $link ?></li>
+            <?php } ?>
+        </nav>
+    </div>
+</header>
+

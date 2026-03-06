@@ -1,0 +1,14 @@
+<footer>
+    <!-- copyright, mentions légales etc etc-->
+    <div>
+        <img class="logo-footer" src="assets/images/<?= $data["logo"]?>" alt="logo de chauve souris">
+        <p>Copyright - Les dieux du code</p>
+    </div>
+    <nav>
+        <!-- votre navigation -->
+        <?php foreach($data["links"] as $link) { ?>
+        <li><?= $link ?></li>
+        <?php } ?>
+    </nav>
+</footer>
+

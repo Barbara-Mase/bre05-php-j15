@@ -1,0 +1,20 @@
+<main class="main">
+    <div class="titre">
+        <img class="logo-main" src="assets/images/<?= $data["logo"]?>" alt="logo de chauve souris">
+        <h2><?= $data["name"] ?></h2>
+        <h3><?= $data["tagline"] ?></h3>
+    </div>
+    <section class="services">
+        <h4>NOS SERVICES</h4>
+        <div class="services-liste">
+            <?php foreach($data["services"] as $service) {?>
+            <div class="detail-service">
+                <img class="img-service" src="assets/images/<?= $service["image"] ?>" alt="images de détail du service">
+                <h5 class="titre-h5"><?=$service["name"]?></h5>
+                <h6 class="tagline"><?= $service["tagline"] ?></h6>
+                <p class="description"><?= $service["description"] ?></p>
+            </div>
+            <?php } ?>
+        </div>
+    </section>
+</main>
